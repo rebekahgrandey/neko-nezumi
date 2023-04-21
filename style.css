@@ -40,8 +40,8 @@ body{
 
 .mouse{
     width: 30px;
-    height: 30px;
-    background-image: url("");
+    height: 23px;
+    background-image: url("assets/mouse.png");
     background-size: 100% 100%;
     position: fixed;
     z-index: -3;

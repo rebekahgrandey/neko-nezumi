@@ -1,5 +1,5 @@
 const NUM_PILLOWS = 50
-const NUM_MICE = 10
+const NUM_MICE = 7
 
 const cat = document.querySelector('.cat')
 const cat_pos = {
@@ -71,10 +71,12 @@ function checkCollisions(){
         if(collision(mouse.mouse, cat)){
             sound.play()
             mouse.mouse.remove()
-            generateMouse()  //* regenerates another mouse after one disappers..will change later
+            // generateMouse()  //* removed regenerate
         }
     })
 }
+
+// TODO Send alert when all mice are removed
 
 function run(){
     cat_pos.x += cat_vel.x
