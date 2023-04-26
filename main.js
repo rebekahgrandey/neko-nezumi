@@ -11,6 +11,7 @@ const cat_vel = {
     y: 0
 }
 const mice = []
+console.log(mice)
 const sound = new Audio('assets/cat-meow.mp3')
 
 function createPillows(){
@@ -46,7 +47,7 @@ function createMice(){
     }
 }
 
-//to prevent mice from overlapping (from stack overflow)
+//to check if cat overlaps mouse (from stack overflow)
 function collision($div1, $div2) {
     var x1 = $div1.getBoundingClientRect().left;
     var y1 = $div1.getBoundingClientRect().top;
@@ -72,6 +73,7 @@ function checkCollisions(){
             sound.play()
             mouse.mouse.remove()
             // generateMouse()  //* removed regenerate
+            console.log(mice)
         }
     })
 }
